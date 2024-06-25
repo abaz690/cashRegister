@@ -1,0 +1,86 @@
+.hide {
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+    row-gap: 20px
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#1A2932;
+    color:white;
+}
+div#small-box {
+    height: 30px;
+    width: 40px;
+    background-color: deepskyblue;
+    margin-left: 60px;
+}
+div#total-bill {
+    /* background-color: deepskyblue; */
+    border: solid 15px deepskyblue;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    max-width: 150px;
+}
+div#cash-counter {
+    background-color: deepskyblue;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    column-gap: 30px;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+div#change-box {
+    height: 230px;
+    width: 160px;
+    background-color: white;
+    color: black;
+    overflow:auto;
+}
+div#black-box {
+    height: 100px;
+    width: 100px;
+}
+span.empty-span {
+    background-color: black;
+}
+div#black-box {
+    display: grid;
+    grid-template-columns: 26px 26px 26px;
+    grid-template-rows: 26px 26px 26px;
+    gap: 8px;
+}
+div#small-circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    left: 155px;
+}
+div#counter-footer {
+    height: 50px;
+    width: 340px;
+    background-color: deepskyblue;
+    margin-top: 10px;
+}
+input#cash {
+    height: 30px;
+}
+button{
+    font-size:large;
+}
+p{
+    margin:8px 0;
+}
