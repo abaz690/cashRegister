@@ -1,5 +1,5 @@
 let purchaseBtn = document.getElementById("purchase-btn");
-let parseFloatInput = document.getElementById("cash");
+let cashProvided = document.getElementById("cash");
 let output = document.getElementById("change-due");
 let cashBox= document.getElementById("change-box");
 let totalPrice= document.getElementById("total-bill")
@@ -60,8 +60,8 @@ const calculateCount = (amount, crr) => {
 const calculateChange = () => {
     let res=0;
     let newCount = 0;
-    let amount = parseFloat((parseFloat(parseFloatInput.value,10) - price).toFixed(2));
-
+    let amount = parseFloat((parseFloat(cashProvided.value,10) - price).toFixed(2));
+    cashProvided.value="";
     if (amount<0){
         alert('Customer does not have enough money to purchase the item')
     }
